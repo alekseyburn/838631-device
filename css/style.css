@@ -103,8 +103,9 @@ body {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
-  border: none;
+
   background-color: transparent;
+  border: none;
 }
 
 .btn:active {
@@ -216,15 +217,15 @@ body {
   opacity: 0.3;
 }
 
-.catalog-list {
+.catalog-nav-list {
   display: none;
 }
 
-.catalog-hover:hover .catalog-list {
+.catalog-hover:hover .catalog-nav-list {
   display: block;
 }
 
-.catalog-list ul {
+.catalog-nav-list ul {
   margin: 0;
   padding: 0;
 
@@ -454,6 +455,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: rgba(70, 70, 70, 0.4);
+
   background-color: #f2f2f2;
   border: none;
 }
@@ -466,11 +468,231 @@ body {
 .feedback-form input:focus,
 .feedback-form textarea:focus {
   color: #000000;
-  border: 3px solid #f7e296;
+
   background-color: transparent;
+  border: 3px solid #f7e296;
   outline: none;
 }
 
 .feedback-form input:invalid {
   background-color: rgba(237, 181, 181, 0.5);
+}
+
+.page-title {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.47px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+
+.breadcrumbs a {
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.filters h2,
+.sort h2 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+
+.filter fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter legend {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.18px;
+}
+
+.price-controls label {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0;
+
+  opacity: 0.2;
+}
+
+.price-controls input {
+  border: none;
+}
+
+.filter-item ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter-option label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+}
+
+.sort-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort-list a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  letter-spacing: 0;
+
+  opacity: 0.3;
+}
+
+.sort-list a:hover,
+.sort-list a:focus {
+  opacity: 0.6;
+}
+
+.sort-list a:active {
+  opacity: 1;
+}
+
+.sort-current a,
+.sort-current a:hover,
+.sort-current a:focus,
+.sort-current a:active {
+  opacity: 1;
+}
+
+.sort-arrows {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.img-wrapper {
+  margin: 0;
+}
+
+.catalog-item h3 {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.price {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
+.compare-btn {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 36px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  letter-spacing: 0.13px;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+
+  background-color: #ebebeb;
+}
+
+.pagination-item a {
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  opacity: 0.6;
+}
+
+.pagination-item a:active {
+  opacity: 1;
+}
+
+.pagination-item-back a,
+.pagination-item-next a {
+  opacity: 1;
+}
+
+.pagination-item-back a:hover,
+.pagination-item-back a:focus,
+.pagination-item-next a:hover,
+.pagination-item-next a:focus {
+  background-color: #d9d9d9;
+  opacity: 1;
+}
+
+.pagination-item-back a:active,
+.pagination-item-next a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-current a {
+  opacity: 1;
 }
