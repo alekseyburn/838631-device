@@ -1,0 +1,272 @@
+@font-face {
+  font-weight: 800;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: local("Gilroy-ExtraBold"),
+  local("Gilroy - Extra Bold"),
+  url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: local("Gilroy-Light"),
+  local("Gilroy - Light"),
+  url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: local("OpenSans-light"),
+  local("Open Sans - light"),
+  url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: local("OpenSans"),
+  local("Open Sans"),
+  url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus),
+.filter-input-radio.visually-hidden,
+.filter-input-checkbox.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.btn {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header {
+  background-color: #f7e296;
+}
+
+.main-header a {
+  color: #000000;
+}
+
+.main-header-caption,
+.main-footer-caption {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.main-header-caption:hover,
+.main-header-caption:focus,
+.main-footer-caption:hover,
+.main-footer-caption:focus {
+  opacity: 0.6;
+}
+
+.main-header-caption:active,
+.main-footer-caption:active {
+  opacity: 0.3;
+}
+
+.middle-header a:hover,
+.middle-header a:focus {
+  opacity: 0.6;
+}
+
+.middle-header a:active {
+  opacity: 0.3;
+}
+
+.search-form input {
+  font: inherit;
+  opacity: 0.3;
+  border: none;
+  background-color: transparent;
+}
+
+.search-form input:hover {
+  opacity: 0.6;
+}
+
+.search-form input:focus {
+  opacity: 1;
+}
+
+.search-btn {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 0;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.login-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation > li > a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  opacity: 0.6;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.catalog-list {
+  display: none;
+}
+
+.catalog-hover:hover .catalog-list {
+  display: block;
+}
+
+.catalog-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-item span {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 179.2px;
+  line-height: 179.2px;
+  font-weight: 800;
+  /*color: #ffffff;*/
+}
+
+.slider-item h2 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.slider-item p {
+  color: #464646;
+  margin: 0;
+}
+
+.table-parameters {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.table-captions {
+  font-size: 13px;
+  line-height: 20px;
+  color: #464646;
+}
+
+.popular-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular-item h3 {
+  color: #000000;
+}
