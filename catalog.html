@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header-caption" href="index.html">Device</a>
     <div class="middle-header">
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -16,18 +16,32 @@
         <button class="search-btn" type="submit">Найти</button>
       </form>
       <ul class="login-navigation">
-        <li class="login-navigation-item"><a class="login-link hide" href="#">Войти</a></li>
-        <li class="login-navigation-item"><a class="profile-link" href="#">Валентин Петухов</a></li>
-        <li class="login-navigation-item"><a class="logout-link" href="#">Выйти</a></li>
+        <li class="login-navigation-item hide">
+          <a class="login-link" href="#">Войти
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#272525" d="M.03 12h12.94A6.22 6.22 0 0 0 8.3 6.46 3.47 3.47 0 0 0 6.5 0a3.49 3.49 0 0 0-1.8 6.46C2.1 7.16.2 9.36.03 12z"/></svg>
+          </a>
+        </li>
+        <li class="login-navigation-item">
+          <a class="profile-link" href="#">Валентин Петухов
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#272525" d="M.03 12h12.94A6.22 6.22 0 0 0 8.3 6.46 3.47 3.47 0 0 0 6.5 0a3.49 3.49 0 0 0-1.8 6.46C2.1 7.16.2 9.36.03 12z"/></svg>
+          </a>
+        </li>
+        <li class="login-navigation-item">
+          <a class="logout-link" href="#">Выйти</a>
+        </li>
       </ul>
-      <a class="compare" href="#">Сравнить</a>
-      <a class="cart" href="#">Корзина</a>
+      <a class="compare" href="#">Сравнить
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><path d="M8 2h1.98v8H8zM0 3h1.98v7H0zM4 0h2v10H4z"/></svg>
+      </a>
+      <a class="cart" href="#">Корзина
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M11.86 3.02a.43.43 0 0 0-.32-.16H9.23V4.1c0 .56-.49 1.02-1.09 1.02-.59 0-1.07-.46-1.07-1.02V2.86H4.9V4.1c0 .56-.49 1.02-1.08 1.02-.6 0-1.08-.46-1.08-1.02V2.86H.44a.43.43 0 0 0-.33.16.47.47 0 0 0-.1.35l.77 7.14c.01.8.64 1.45 1.41 1.45h7.6c.77 0 1.4-.65 1.4-1.45l.78-7.13a.48.48 0 0 0-.1-.36z"/><path d="M3.83 4.5c.24 0 .43-.19.43-.41V1.84c0-.63.67-1.02 1.3-1.02h1.08c.65 0 1.07.4 1.07 1.02v2.25c0 .23.2.4.44.4.23 0 .43-.18.43-.4V1.84C8.58.77 7.76 0 6.64 0H5.56C4.36 0 3.4.83 3.4 1.84v2.25c0 .23.2.4.43.4z"/></svg>
+      </a>
     </div>
     <div class="bottom-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="catalog-hover">
-            <a href="catalog.html">Каталог товаров</a>
+            <a href="#">Каталог товаров</a>
             <div class="catalog-nav-list">
               <ul class="simple-devices">
                 <li><a href="#">Виртуальная реальность</a></li>
@@ -199,34 +213,50 @@
   </main>
 
   <footer class="main-footer">
-    <div class="footer-top">
-      <a class="main-footer-caption" href="index.html">Device</a>
-      <ul class="login-navigation">
-        <li class="login-navigation-item hide"><a class="login-link" href="#">Войти</a></li>
-        <li class="login-navigation-item"><a class="profile-link" href="#">Валентин Петухов</a></li>
-        <li class="login-navigation-item"><a class="logout-link" href="#">Выйти</a></li>
-      </ul>
-      <a href="#" class="compare">Сравнить</a>
-      <a href="#" class="cart">Корзина</a>
-    </div>
+    <div class="container">
+      <div class="footer-top">
+        <a class="main-footer-caption" href="index.html">Device</a>
+        <ul class="login-navigation">
+          <li class="login-navigation-item hide">
+            <a class="login-link" href="#">Войти
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#272525" d="M.03 12h12.94A6.22 6.22 0 0 0 8.3 6.46 3.47 3.47 0 0 0 6.5 0a3.49 3.49 0 0 0-1.8 6.46C2.1 7.16.2 9.36.03 12z"/></svg>
+            </a>
+          </li>
+          <li class="login-navigation-item">
+            <a class="profile-link" href="#">Валентин Петухов
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12"><path fill="#272525" d="M.03 12h12.94A6.22 6.22 0 0 0 8.3 6.46 3.47 3.47 0 0 0 6.5 0a3.49 3.49 0 0 0-1.8 6.46C2.1 7.16.2 9.36.03 12z"/></svg>
+            </a>
+          </li>
+          <li class="login-navigation-item">
+            <a class="logout-link" href="#">Выйти</a>
+          </li>
+        </ul>
+        <a class="compare" href="#">Сравнить
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><path d="M8 2h1.98v8H8zM0 3h1.98v7H0zM4 0h2v10H4z"/></svg>
+        </a>
+        <a class="cart" href="#">Корзина
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M11.86 3.02a.43.43 0 0 0-.32-.16H9.23V4.1c0 .56-.49 1.02-1.09 1.02-.59 0-1.07-.46-1.07-1.02V2.86H4.9V4.1c0 .56-.49 1.02-1.08 1.02-.6 0-1.08-.46-1.08-1.02V2.86H.44a.43.43 0 0 0-.33.16.47.47 0 0 0-.1.35l.77 7.14c.01.8.64 1.45 1.41 1.45h7.6c.77 0 1.4-.65 1.4-1.45l.78-7.13a.48.48 0 0 0-.1-.36z"/><path d="M3.83 4.5c.24 0 .43-.19.43-.41V1.84c0-.63.67-1.02 1.3-1.02h1.08c.65 0 1.07.4 1.07 1.02v2.25c0 .23.2.4.44.4.23 0 .43-.18.43-.4V1.84C8.58.77 7.76 0 6.64 0H5.56C4.36 0 3.4.83 3.4 1.84v2.25c0 .23.2.4.43.4z"/></svg>
+        </a>
+      </div>
 
-    <div class="footer-middle">
-      <p class="address">г. Москва, ул. Строителей, 15</p>
-      <ul class="info-list">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <a href="tel:+74954959595">+7 (495) 495-95-95</a>
-    </div>
+      <div class="footer-middle">
+        <p class="address">г. Москва, ул. Строителей, 15</p>
+        <ul class="info-list">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a class="phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div>
 
-    <div class="footer-bottom">
-      <ul class="social-list">
-        <li><a href="#" class="social-link"><span class="visually-hidden">Facebook</span></a></li>
-        <li><a href="#" class="social-link"><span class="visually-hidden">Instagram</span></a></li>
-        <li><a href="#" class="social-link"><span class="visually-hidden">Twitter</span></a></li>
-      </ul>
-      <a href="#" class="academy-link"><img src="img/logo-htmlacademy.svg" width="26.94" height="34.09" alt="Html Academy"></a>
+      <div class="footer-bottom">
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><span class="visually-hidden">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#FFF" d="M16 0a16 16 0 1 0 0 32 16 16 0 0 0 0-32zm4.06 9.46h-3.02v3.44h3.02v3.44h-3.02v8.61h-3.02v-8.6H11V12.9h3.02V9.45c0-1.9 1.35-3.44 3.02-3.44h3.02v3.45z"/></svg></a></li>
+          <li><a href="#" class="social-link"><span class="visually-hidden">Instagram</span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#FFF"><path d="M20.92 16a4.94 4.94 0 1 1-9.74-1.14h-.9v6.84h11.4v-6.84h-.9c.08.37.14.75.14 1.14z"/><path d="M15.98 18.66a2.66 2.66 0 1 0 0-5.33 2.66 2.66 0 0 0 0 5.33zM18.64 10.3h3.04v3.04h-3.04z"/><path d="M16 0a16 16 0 1 0 0 32 16 16 0 0 0 0-32zm7.95 21.7a2.28 2.28 0 0 1-2.27 2.28h-11.4A2.28 2.28 0 0 1 8 21.7V10.3a2.29 2.29 0 0 1 2.28-2.28h11.4a2.29 2.29 0 0 1 2.27 2.28v11.4z"/></g></svg></a></li>
+          <li><a href="#" class="social-link"><span class="visually-hidden">Twitter</span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#FFF" d="M16 0a16 16 0 1 0 0 32 16 16 0 0 0 0-32zm7.94 12.8c-.25 6.52-3.46 10.84-10.99 10.71h-.48c-.45 0-4.55-.44-5.35-1.82 2.48.19 4.25-.4 5.12-1.14-1.05-.29-2.92-.46-3.25-2.85.38.1.62.23 1.3.12-1.3-.83-2.76-1.52-2.68-3.65.31.32 1.16.52 1.46.46-.77-.23-2.15-3.24-.97-4.78 1.98 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32 1.84-.48 3.25.26 3.9 1.14.74-.23 1.45-.47 2.2-.69-.01.83-.58 1.46-.94 1.71.75.17 1.42-.47 1.42-.47a2.92 2.92 0 0 1-1.7 1.95z"/></svg></a></li>
+        </ul>
+        <a href="#" class="academy-link"><span class="visually-hidden">Html Academy</span><svg xmlns="http://www.w3.org/2000/svg" width="26.94" height="34.09"><path d="M13.62.02L13.47 0 0 1.41v24.66l13.47 8.02L26.9 26.1l.05-.03V1.42L13.62.01zm11.4 12.1L13.49 5.34v-.1l-.08.05-.1-.06v.11L1.94 12.12V3.15l11.54-1.21 11.55 1.2v8.99zM13.4 6.8l11.52 6.71-4.48 2.64-7.09-4.22-.01 1.41 5.9 3.52-.86.5-5.03-2.99-.01 1.42 3.82 2.27-.78.52-3.03-1.78-.01 1.41 1.85 1.1-1.8 1.07-11.36-6.75L13.41 6.8zM1.93 15.13l11.4 6.79.02 1.04-7.94-4.73-.02 1.42 7.98 4.8.02 1.07-7.97-4.74-.01 1.41 8.02 4.83.04.02 8.15-4.87-.02-5.18 3.42-2.03v10.02l-11.55 6.87-11.54-6.87v-9.85z"/></svg></a>
+      </div>
     </div>
   </footer>
     <script>document.write('<script src="http://'
