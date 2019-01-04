@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="inner-page">
   <div class="container">
@@ -90,8 +90,8 @@
               <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <label class="min-price">от <input type="text" class="input-price-field" id="min-price-field" name="min-price" min="0" max="30000" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" class="input-price-field" id="max-price-field" min="0" max="5000" value="5000"></label>
+              <label class="min-price">от <input type="number" class="input-price-field" id="min-price-field" name="min-price" min="0" max="30000" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" class="input-price-field" id="max-price-field" min="0" max="5000" value="5000"></label>
             </div>
           </fieldset>
           <fieldset class="filter-item">
@@ -276,9 +276,5 @@
       </div>
     </div>
   </footer>
-  <script>document.write('<script src="http://'
-    + (location.host || 'localhost').split(':')[0]
-    + ':35729/livereload.js?snipver=1"></'
-    + 'script>')</script>
   </body>
   </html>
